@@ -35,4 +35,4 @@ GitHub Pages
 Web Design and Development Project
 
 ---
-© 2026 LuxLooks Unisex Salon
+© 2026 UNISEX SALON PARLOUR 
