@@ -1,158 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | LuxLooks</title>
+    <title>Gallery | LuxeLook Unisex Salon</title>
+
+    <!-- Existing CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Existing JavaScript file -->
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<header class="site-header">
-    <a class="logo" href="index.html">LUX<span>LOOKS</span></a>
-    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <!-- HEADER -->
+    <header>
+        <h1>LuxeLook Unisex Salon</h1>
+        <p>Style • Beauty • Confidence</p>
 
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a class="active" href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-    <section class="page-banner">
-        <p class="eyebrow">THE LOOKBOOK</p>
-        <h1>Style Gallery</h1>
-        <p>Explore hairstyle inspiration and salon interiors.</p>
-    </section>
+        <!-- GALLERY -->
+        <section>
+            <h2>Our Gallery</h2>
+            <p>Explore our salon, hairstyles and beauty services.</p>
 
-    <section class="section container">
-        <div class="gallery-grid">
-
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=85"
-                     alt="Hair styling inspiration">
-                <figcaption>Classic Cut</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80"
+                    alt="Professional salon interior"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Our Salon</figcaption>
             </figure>
 
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85"
-                     alt="Modern hairstyle">
-                <figcaption>Modern Texture</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80"
+                    alt="Salon styling station"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Professional Styling</figcaption>
             </figure>
 
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=85"
-                     alt="Hair colour inspiration">
-                <figcaption>Colour & Shine</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80"
+                    alt="Hair care and styling"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Hair Care</figcaption>
             </figure>
 
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85"
-                     alt="Layered hairstyle">
-                <figcaption>Soft Layers</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80"
+                    alt="Beauty products"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Beauty Care</figcaption>
             </figure>
 
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85"
-                     alt="Occasion hairstyle">
-                <figcaption>Event Styling</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+                    alt="Beauty and makeup"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Makeup Services</figcaption>
             </figure>
 
-            <figure class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=85"
-                     alt="Salon interior">
-                <figcaption>Salon Experience</figcaption>
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+                    alt="Hair styling inspiration"
+                    width="300"
+                    loading="lazy">
+                <figcaption>Latest Styles</figcaption>
             </figure>
+        </section>
 
-        </div>
-    </section>
+        <hr>
 
-    <section class="section soft-section">
-        <div class="container">
+        <!-- VIDEO SECTION -->
+        <section id="salon-video">
+            <h2>Watch Our Salon Video</h2>
+            <p>Discover the LuxeLook salon experience.</p>
 
-            <div class="section-heading">
-                <p class="eyebrow">MEDIA CORNER</p>
-                <h2>Video & Audio</h2>
-            </div>
+            <video
+                id="salonVideo"
+                controls
+                playsinline
+                preload="metadata"
+                width="640">
 
-            <div class="media-grid">
+                <source
+                    src="./1000644992.mp4"
+                    type="video/mp4">
 
-                <div class="media-card">
-                    <h3>Salon Video</h3>
+                Your browser does not support HTML video.
+            </video>
 
-                    <video id="salonVideo"
-                           controls
-                           playsinline
-                           preload="metadata"
-                           poster="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80">
+            <p id="videoStatus" role="status">
+                Video loading status will appear here.
+            </p>
 
-                        <source src="1000644992.mp4" type="video/mp4">
+            <p>
+                <a href="./1000644992.mp4" target="_blank">
+                    Open video file directly
+                </a>
+            </p>
+        </section>
 
-                        Your browser does not support video playback.
-                    </video>
+        <hr>
 
-                    <p id="videoMessage">
-                        Press Play to watch the salon video.
-                    </p>
-                </div>
+        <!-- AUDIO SECTION -->
+        <section id="salon-audio">
+            <h2>Salon Music</h2>
+            <p>Listen to our salon music.</p>
 
-                <div class="media-card">
-                    <h3>Salon Audio</h3>
+            <audio
+                id="salonAudio"
+                controls
+                preload="metadata">
 
-                    <audio id="salonAudio" controls preload="metadata">
-                        <source src="salon-audio.mp3" type="audio/mpeg">
-                        Your browser does not support audio playback.
-                    </audio>
+                <source
+                    src="./salon-audio.mp3"
+                    type="audio/mpeg">
 
-                    <p id="audioMessage">
-                        Press Play to listen to the audio.
-                    </p>
-                </div>
+                Your browser does not support HTML audio.
+            </audio>
 
-            </div>
-        </div>
-    </section>
+            <p id="audioStatus" role="status">
+                Audio loading status will appear here.
+            </p>
 
-</main>
+            <p>
+                <a href="./salon-audio.mp3" target="_blank">
+                    Open audio file directly
+                </a>
+            </p>
+        </section>
 
-<footer class="site-footer">
-    <a class="logo" href="index.html">LUX<span>LOOKS</span></a>
-    <p>Luxury Unisex Salon | &copy; <span id="year"></span></p>
-</footer>
+    </main>
 
-<script>
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span>
+            LuxeLook Unisex Salon. All rights reserved.
+        </p>
+    </footer>
 
-const video = document.getElementById("salonVideo");
-const videoMessage = document.getElementById("videoMessage");
+    <!-- MEDIA ERROR CHECKING -->
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
 
-video.addEventListener("playing", function () {
-    videoMessage.textContent = "Video is playing.";
-});
+        const video = document.getElementById("salonVideo");
+        const audio = document.getElementById("salonAudio");
 
-video.addEventListener("error", function () {
-    videoMessage.textContent =
-        "Video not found. Check the filename and folder.";
-});
+        const videoStatus = document.getElementById("videoStatus");
+        const audioStatus = document.getElementById("audioStatus");
 
-const audio = document.getElementById("salonAudio");
-const audioMessage = document.getElementById("audioMessage");
+        video.addEventListener("loadedmetadata", function () {
+            videoStatus.textContent = "Video file loaded. Press Play.";
+        });
 
-audio.addEventListener("playing", function () {
-    audioMessage.textContent = "Audio is playing.";
-});
+        video.addEventListener("error", function () {
+            videoStatus.textContent =
+                "Video could not load. Check the filename, file path and MP4 format.";
+        });
 
-audio.addEventListener("error", function () {
-    audioMessage.textContent =
-        "Audio not found. Check salon-audio.mp3.";
-});
-</script>
+        audio.addEventListener("canplay", function () {
+            audioStatus.textContent = "Audio file loaded. Press Play.";
+        });
+
+        audio.addEventListener("error", function () {
+            audioStatus.textContent =
+                "Audio could not load. Check the filename, file path and MP3 format.";
+        });
+    </script>
 
 </body>
 </html>
