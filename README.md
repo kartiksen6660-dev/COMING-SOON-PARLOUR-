@@ -1,1 +1,38 @@
 # SALOON-START-UP-
+# LuxLooks Unisex Salon ✨
+
+Welcome to LuxLooks — your luxury unisex salon experience with an elegant black and gold theme.
+
+## 🌐 Live Website
+https://kartiksen6660-dev.github.io/
+
+## 💇 Services
+- Haircut & Hairstyling
+- Hair Coloring
+- Facial & Skincare
+- Bridal Makeup
+- Grooming Services
+
+## 📄 Pages
+- Home
+- About Us
+- Services
+- Gallery
+- Contact Us
+
+## 🛠️ Technologies
+- HTML5
+- CSS3
+- JavaScript
+
+## 🎵 Media
+Audio and video players are available on the Gallery page.
+
+## 🚀 Hosting
+GitHub Pages
+
+## 👨‍💻 Project
+Web Design and Development Project
+
+---
+© 2026 LuxLooks Unisex Salon
