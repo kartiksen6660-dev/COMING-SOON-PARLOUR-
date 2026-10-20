@@ -23,6 +23,7 @@
 </header>
 
 <main>
+
     <section class="page-banner">
         <p class="eyebrow">THE LOOKBOOK</p>
         <h1>Style Gallery</h1>
@@ -73,48 +74,85 @@
 
     <section class="section soft-section">
         <div class="container">
+
             <div class="section-heading">
                 <p class="eyebrow">MEDIA CORNER</p>
                 <h2>Video & Audio</h2>
             </div>
 
             <div class="media-grid">
+
                 <div class="media-card">
                     <h3>Salon Video</h3>
 
-                    <video controls preload="metadata"
+                    <video id="salonVideo"
+                           controls
+                           playsinline
+                           preload="metadata"
                            poster="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80">
-                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-                                type="video/mp4">
-                        Your browser does not support video.
+
+                        <source src="1000644992.mp4" type="video/mp4">
+
+                        Your browser does not support video playback.
                     </video>
 
-                    <p class="small-note">
-                        Video ke liye internet connection chahiye.
+                    <p id="videoMessage">
+                        Press Play to watch the salon video.
                     </p>
                 </div>
 
                 <div class="media-card">
                     <h3>Salon Audio</h3>
 
-                    <audio controls>
+                    <audio id="salonAudio" controls preload="metadata">
                         <source src="salon-audio.mp3" type="audio/mpeg">
-                        Your browser does not support audio.
+                        Your browser does not support audio playback.
                     </audio>
-                    
-                    <p class="small-note">
-                        Audio file isi folder mein rakho.
+
+                    <p id="audioMessage">
+                        Press Play to listen to the audio.
                     </p>
                 </div>
+
             </div>
         </div>
     </section>
+
 </main>
 
 <footer class="site-footer">
     <a class="logo" href="index.html">LUX<span>LOOKS</span></a>
-    <p>Luxury Unisex Salon | © <span id="year"></span></p>
-</footer> 
-</section>
+    <p>Luxury Unisex Salon | &copy; <span id="year"></span></p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+const video = document.getElementById("salonVideo");
+const videoMessage = document.getElementById("videoMessage");
+
+video.addEventListener("playing", function () {
+    videoMessage.textContent = "Video is playing.";
+});
+
+video.addEventListener("error", function () {
+    videoMessage.textContent =
+        "Video not found. Check the filename and folder.";
+});
+
+const audio = document.getElementById("salonAudio");
+const audioMessage = document.getElementById("audioMessage");
+
+audio.addEventListener("playing", function () {
+    audioMessage.textContent = "Audio is playing.";
+});
+
+audio.addEventListener("error", function () {
+    audioMessage.textContent =
+        "Audio not found. Check salon-audio.mp3.";
+});
+</script>
+
 </body>
 </html>
