@@ -1,7 +1,7 @@
 # SALOON-START-UP-
-# LuxLooks Unisex Salon ✨
+#  Unisex Salon ✨
 
-Welcome to LuxLooks — your luxury unisex salon experience with an elegant black and gold theme.
+Welcome to Unisex Salon — your luxury unisex salon experience with an elegant black and gold theme.
 
 ## 🌐 Live Website
 https://kartiksen6660-dev.github.io/SALOON-START-UP-/
