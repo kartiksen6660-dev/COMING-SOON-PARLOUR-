@@ -4,7 +4,7 @@
 Welcome to LuxLooks — your luxury unisex salon experience with an elegant black and gold theme.
 
 ## 🌐 Live Website
-https://kartiksen6660-dev.github.io/
+https://kartiksen6660-dev.github.io/SALOON-START-UP-/
 
 ## 💇 Services
 - Haircut & Hairstyling
