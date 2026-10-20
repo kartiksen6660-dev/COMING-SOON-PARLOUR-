@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gallery | LuxeLook Unisex Salon</title>
 
-    <!-- Existing CSS file -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Existing JavaScript file -->
     <script src="script.js" defer></script>
 </head>
 
@@ -22,7 +20,7 @@
 
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="About.html">About</a>
             <a href="service.html">Services</a>
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
@@ -31,15 +29,15 @@
 
     <main>
 
-        <!-- GALLERY -->
-        <section>
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
             <h2>Our Gallery</h2>
-            <p>Explore our salon, hairstyles and beauty services.</p>
+            <p>Explore our salon, beauty services and latest styles.</p>
 
             <figure>
                 <img
                     src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80"
-                    alt="Professional salon interior"
+                    alt="Salon interior"
                     width="300"
                     loading="lazy">
                 <figcaption>Our Salon</figcaption>
@@ -48,7 +46,7 @@
             <figure>
                 <img
                     src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80"
-                    alt="Salon styling station"
+                    alt="Professional salon"
                     width="300"
                     loading="lazy">
                 <figcaption>Professional Styling</figcaption>
@@ -57,7 +55,7 @@
             <figure>
                 <img
                     src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80"
-                    alt="Hair care and styling"
+                    alt="Hair care"
                     width="300"
                     loading="lazy">
                 <figcaption>Hair Care</figcaption>
@@ -75,7 +73,7 @@
             <figure>
                 <img
                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
-                    alt="Beauty and makeup"
+                    alt="Makeup look"
                     width="300"
                     loading="lazy">
                 <figcaption>Makeup Services</figcaption>
@@ -84,7 +82,7 @@
             <figure>
                 <img
                     src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
-                    alt="Hair styling inspiration"
+                    alt="Hair styling"
                     width="300"
                     loading="lazy">
                 <figcaption>Latest Styles</figcaption>
@@ -94,9 +92,9 @@
         <hr>
 
         <!-- VIDEO SECTION -->
-        <section id="salon-video">
-            <h2>Watch Our Salon Video</h2>
-            <p>Discover the LuxeLook salon experience.</p>
+        <section id="video-section">
+            <h2>Our Salon Video</h2>
+            <p>Experience the world of LuxeLook Unisex Salon.</p>
 
             <video
                 id="salonVideo"
@@ -105,20 +103,18 @@
                 preload="metadata"
                 width="640">
 
-                <source
-                    src="./1000644992.mp4"
-                    type="video/mp4">
+                <source src="./salon-video.mp4" type="video/mp4">
 
-                Your browser does not support HTML video.
+                Your browser does not support video playback.
             </video>
 
             <p id="videoStatus" role="status">
-                Video loading status will appear here.
+                Video load ho rahi hai...
             </p>
 
             <p>
-                <a href="./1000644992.mp4" target="_blank">
-                    Open video file directly
+                <a href="./salon-video.mp4" target="_blank">
+                    Open video separately
                 </a>
             </p>
         </section>
@@ -126,29 +122,27 @@
         <hr>
 
         <!-- AUDIO SECTION -->
-        <section id="salon-audio">
+        <section id="audio-section">
             <h2>Salon Music</h2>
-            <p>Listen to our salon music.</p>
+            <p>Enjoy the music while exploring our gallery.</p>
 
             <audio
                 id="salonAudio"
                 controls
                 preload="metadata">
 
-                <source
-                    src="./salon-audio.mp3"
-                    type="audio/mpeg">
+                <source src="./salon-audio.mp3" type="audio/mpeg">
 
-                Your browser does not support HTML audio.
+                Your browser does not support audio playback.
             </audio>
 
             <p id="audioStatus" role="status">
-                Audio loading status will appear here.
+                Audio load ho raha hai...
             </p>
 
             <p>
                 <a href="./salon-audio.mp3" target="_blank">
-                    Open audio file directly
+                    Open audio separately
                 </a>
             </p>
         </section>
@@ -163,7 +157,7 @@
         </p>
     </footer>
 
-    <!-- MEDIA ERROR CHECKING -->
+    <!-- MEDIA STATUS CHECK -->
     <script>
         document.getElementById("currentYear").textContent =
             new Date().getFullYear();
@@ -175,21 +169,23 @@
         const audioStatus = document.getElementById("audioStatus");
 
         video.addEventListener("loadedmetadata", function () {
-            videoStatus.textContent = "Video file loaded. Press Play.";
+            videoStatus.textContent =
+                "Video ready hai. Play button dabao.";
         });
 
         video.addEventListener("error", function () {
             videoStatus.textContent =
-                "Video could not load. Check the filename, file path and MP4 format.";
+                "Video load nahi hui. Filename, upload aur MP4 format check karo.";
         });
 
         audio.addEventListener("canplay", function () {
-            audioStatus.textContent = "Audio file loaded. Press Play.";
+            audioStatus.textContent =
+                "Audio ready hai. Play button dabao.";
         });
 
         audio.addEventListener("error", function () {
             audioStatus.textContent =
-                "Audio could not load. Check the filename, file path and MP3 format.";
+                "Audio load nahi hui. Filename, upload aur MP3 format check karo.";
         });
     </script>
 
