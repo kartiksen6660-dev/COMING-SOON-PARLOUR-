@@ -1,146 +1,158 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | LuxeLook Unisex Salon</title>
+    <title>Gallery | LuxLooks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <h1>LuxeLook Unisex Salon</h1>
+<header class="site-header">
+    <a class="logo" href="index.html">LUX<span>LOOKS</span></a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
 
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="service.html">Services</a> |
-            <a href="gallery.html">Gallery</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <hr>
+<main>
 
-    <!-- Gallery Introduction -->
-    <main>
-        <section>
-            <h2>Our Gallery</h2>
-            <p>
-                Welcome to LuxeLook Unisex Salon.
-                Explore our beauty services and salon experience.
-            </p>
-        </section>
+    <section class="page-banner">
+        <p class="eyebrow">THE LOOKBOOK</p>
+        <h1>Style Gallery</h1>
+        <p>Explore hairstyle inspiration and salon interiors.</p>
+    </section>
 
-        <hr>
+    <section class="section container">
+        <div class="gallery-grid">
 
-        <!-- Gallery Categories -->
-        <section>
-            <h2>Our Beauty Collection</h2>
-
-            <figure>
-                <img
-                    src="https://placehold.co/400x250?text=Hair+Styling"
-                    alt="Hair styling"
-                    width="300"
-                >
-                <figcaption>
-                    <h3>Hair Styling</h3>
-                    <p>Trendy haircuts and professional styling.</p>
-                </figcaption>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=85"
+                     alt="Hair styling inspiration">
+                <figcaption>Classic Cut</figcaption>
             </figure>
 
-            <figure>
-                <img
-                    src="https://placehold.co/400x250?text=Hair+Care"
-                    alt="Hair care"
-                    width="300"
-                >
-                <figcaption>
-                    <h3>Hair Care</h3>
-                    <p>Hair care and nourishing treatments.</p>
-                </figcaption>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=85"
+                     alt="Modern hairstyle">
+                <figcaption>Modern Texture</figcaption>
             </figure>
 
-            <figure>
-                <img
-                    src="https://placehold.co/400x250?text=Skin+Care"
-                    alt="Skin care"
-                    width="300"
-                >
-                <figcaption>
-                    <h3>Skin Care</h3>
-                    <p>Refreshing facials and skin care services.</p>
-                </figcaption>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=85"
+                     alt="Hair colour inspiration">
+                <figcaption>Colour & Shine</figcaption>
             </figure>
 
-            <figure>
-                <img
-                    src="https://placehold.co/400x250?text=Nail+Care"
-                    alt="Nail care"
-                    width="300"
-                >
-                <figcaption>
-                    <h3>Nail Care</h3>
-                    <p>Nail grooming and beauty services.</p>
-                </figcaption>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85"
+                     alt="Layered hairstyle">
+                <figcaption>Soft Layers</figcaption>
             </figure>
-        </section>
 
-        <hr>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=85"
+                     alt="Occasion hairstyle">
+                <figcaption>Event Styling</figcaption>
+            </figure>
 
-        <!-- Video Section -->
-        <section>
-            <h2>Our Salon Video</h2>
-            <p>Watch our salon video below.</p>
+            <figure class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=85"
+                     alt="Salon interior">
+                <figcaption>Salon Experience</figcaption>
+            </figure>
 
-            <video controls playsinline preload="metadata" width="500">
-                <source src="salon-video.mp4" type="video/mp4">
-                Your browser does not support video playback.
-            </video>
+        </div>
+    </section>
 
-            <p>
-                If the video does not play, check that
-                salon-video.mp4 is uploaded to your repository.
-            </p>
-        </section>
+    <section class="section soft-section">
+        <div class="container">
 
-        <hr>
+            <div class="section-heading">
+                <p class="eyebrow">MEDIA CORNER</p>
+                <h2>Video & Audio</h2>
+            </div>
 
-        <!-- Audio Section -->
-        <section>
-            <h2>Relaxing Salon Audio</h2>
-            <p>Listen to the audio below.</p>
+            <div class="media-grid">
 
-            <audio controls preload="metadata">
-                <source src="salon-audio.mp3" type="audio/mpeg">
-                Your browser does not support audio playback.
-            </audio>
+                <div class="media-card">
+                    <h3>Salon Video</h3>
 
-            <p>
-                If the audio does not play, check that
-                salon-audio.mp3 is uploaded to your repository.
-            </p>
-        </section>
+                    <video id="salonVideo"
+                           controls
+                           playsinline
+                           preload="metadata"
+                           poster="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80">
 
-        <hr>
+                        <source src="1000644992.mp4" type="video/mp4">
 
-        <!-- Contact Section -->
-        <section>
-            <h2>Visit LuxeLook</h2>
-            <p>Ready for a new look? Contact us to learn more about our services.</p>
-            <a href="contact.html">Contact Us</a>
-        </section>
-    </main>
+                        Your browser does not support video playback.
+                    </video>
 
-    <hr>
+                    <p id="videoMessage">
+                        Press Play to watch the salon video.
+                    </p>
+                </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 LuxeLook Unisex Salon. All rights reserved.</p>
-    </footer>
+                <div class="media-card">
+                    <h3>Salon Audio</h3>
+
+                    <audio id="salonAudio" controls preload="metadata">
+                        <source src="salon-audio.mp3" type="audio/mpeg">
+                        Your browser does not support audio playback.
+                    </audio>
+
+                    <p id="audioMessage">
+                        Press Play to listen to the audio.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <a class="logo" href="index.html">LUX<span>LOOKS</span></a>
+    <p>Luxury Unisex Salon | &copy; <span id="year"></span></p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+const video = document.getElementById("salonVideo");
+const videoMessage = document.getElementById("videoMessage");
+
+video.addEventListener("playing", function () {
+    videoMessage.textContent = "Video is playing.";
+});
+
+video.addEventListener("error", function () {
+    videoMessage.textContent =
+        "Video not found. Check the filename and folder.";
+});
+
+const audio = document.getElementById("salonAudio");
+const audioMessage = document.getElementById("audioMessage");
+
+audio.addEventListener("playing", function () {
+    audioMessage.textContent = "Audio is playing.";
+});
+
+audio.addEventListener("error", function () {
+    audioMessage.textContent =
+        "Audio not found. Check salon-audio.mp3.";
+});
+</script>
 
 </body>
 </html>
